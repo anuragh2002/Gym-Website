@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Iron Gym</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/73ba6c97c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="pics/logo.png" alt="logo" />
+      <h1 class="heading">ULTIMATE IRON GYM</h1>
+      <h5>
+        RAJ COMPLEX, NEAR PREMSON HONDA <br />
+        SARAIDHELA (DHANBAD) PIN-828127 <br />
+        Mobile Number : 8271753516
+      </h5>
+    </header>
+
+    <section class="container">
+      <h4>Application Form For GYM Membership</h4>
+      <form method="POST" id="form" name="google-sheet">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" placeholder="John Doe" name="Name" id="name" />
+        <label for="fa-name">Enter Your Father's Name:</label>
+        <input type="text" placeholder="Max Doe" name="Father's Name" id="fa-name" />
+        <label for="email">Enter Your Email:</label>
+        <input
+          type="email"
+          placeholder="example@gmail.com"
+          name="Email"
+          id="fa-name"
+        />
+        <label for="contact">Enter Your Contact Number:</label>
+        <input
+          type="number"
+          placeholder="8271753516"
+          name="Contact"
+          id="contact"
+        />
+        <label for="address">Enter Your Residential Address:</label>
+        <textarea placeholder="Address" name="Address" id="address"></textarea>
+        <label for="timing">Enter Your Preferred Timing:</label>
+        <div class="radio container">
+            
+            <input class="form-check-input" type="radio" name="Timing" id="morning" value="Morning" >
+            <label class="form-check-label" for="morning" >
+                Morning
+            </label>
+            <input class="form-check-input" type="radio" name="Timing" id="evening" value="Evening">
+            <label class="form-check-label" for="evening">
+                Evening
+            </label>
+        </div>
+        <label for="">Enter Your Date of Birth:</label>
+        <input
+          type="date"
+          name="Date of Birth"
+          id="dob"
+        />
+        <label for="member-amt">Membership Amount (in Rs) :</label>
+        <input
+          type="number"
+          name="Membership Amount"
+          id="member-amt"
+        />
+        <label for="cr-no">Cash Receipt Number:</label>
+        <input
+          type="text"
+          name="Cash Receipt Number"
+          id="cr-no"
+        />
+        <label for="m-from">Membership Valid From:</label>
+        <input
+          type="date"
+          name="Valid From"
+          id="m-from"
+        />
+        <label for="m-upto">Membership Valid Upto:</label>
+        <input
+          type="date"
+          name="Valid Upto"
+          id="m-upto"
+        />
+
+    </section>
+
+    <section id="rules" class="container">
+        <h1 class="heading">GYM RULES</h1>
+        <div class="rules">
+            <div class="first">
+                <p>
+                    <ul>
+                        <li>Closed in footwear must be worn</li>
+                        <li>Neat and clean clothing must be worn</li>
+                        <li>A towel must be used on all benches</li>
+                        <li>No Chewing gum</li>
+                        <li>Gym equipment must only be used for its intended purpose</li>
+                        <li>No liability for any injuries</li>
+                        <li>No liability for any injuries</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="second">
+                <p>
+                    <ul>
+                        <li>Weights must be returned to place of origin after use</li>
+                        <li>Do not drop weights-place them carefully</li>
+                        <li>No use of alcohol to be consumed in gym</li>
+                        <li>Offensive behavior and swearing will not be tolerated</li>
+                        <li>Gym equipment must only be used for its intended purpose</li>
+                        <li>Do not allow entry to non-member</li>
+                        <li>Compulsory Shoes & Towel</li>
+                    </ul>  
+                </p>
+
+            </div>
+        </div>
+        <div class="container" id="abide">
+            <div class="abide">
+                <input type="checkbox" name="rules" id="rules" required>
+                <label for="rules">
+                    I hereby agree to abide by all the rules and regulations of the nominated Gym as listed above
+                </label>
+            </div>
+            <div class="abide">
+                <input type="checkbox" name="rules" id="rules" required>
+                <label for="rules">
+                    Non-resident members are strictly Prohibited from entering/visiting into the gym. Any member found violating rules shall be liable to disciplinary action
+                </label>
+            </div>
+            <div class="abide">
+                <input type="checkbox" name="rules" id="rules" required>
+                <label for="rules">
+                    I hereby declare that the information above is correct and I will abide by the rules & regulations of the GYM notified from time to time
+                </label>
+            </div>
+        </div>
+
+        <div class="submit">
+            <button type="submit" name="submit" id="submit">
+                Submit
+            </button>
+        </div>
+    </section>
+    <!-- SCRIPT FOR FORM SUBMISSION -->
+    <script src="script.js"></script>
+  </body>
+</html>
